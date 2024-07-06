@@ -1,0 +1,226 @@
+/* 
+   CSS Styles for Tandem Landing
+   Author: Rafael Castillo
+   Description: Hoja de estilos general
+   Version: 1.0
+   Last Updated: Julio 06 2024
+*/
+
+@import url('reset.css');
+@import url('font-face.css');
+
+:root {
+    /* Colores */
+    --white-base: #fafafa;
+    --black-base: #0a0a0b;
+    --main-green-color: #228F86;
+    --main-blue-color: #356ED3;
+    --secondary100: #DDF7F5;
+    --secondary800: #1C776F;
+    --neutrals100: #e3e3e3;
+    /* Tipografia */
+    --font-family-title: 'BR Hendrix', system-ui, sans-serif;
+    --font-family-body: 'Inter', 'Lato' , system-ui, sans-serif;
+    --font-size-xxl: 72px;
+    --font-size-xl: 40px;
+    --font-size-lg: 32px;
+    --font-size-md: 24px;
+    --font-size-sm: 16px;
+    --font-size-xs: 14px; 
+    --font-weight-bold: 700;
+    --font-weight-regular: 400;
+    --font-weight-light: 300;
+    /* Spacing */
+    --spacing-base: 16px;
+    --spacing-xxs:4px;
+    --spacing-xs:8px;
+    --spacing-s:12px;
+    --spacing-m:20px;
+    --spacing-xl:24px;
+    --spacing-xxl:32px;
+    /* Others */
+    --navbar-height: 95px;
+    
+}
+
+body {
+    font-family: var(--font-family-title);
+    position: relative;
+    font-size: var(--font-size-sm);
+}
+
+header {
+    color: var(--white-base);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: var(--navbar-height);
+    padding: 1rem;
+    position: absolute;
+    left: 1rem;
+    right: 1rem;
+    top: 0;
+}
+main{
+    display: block;
+}
+
+.mainMenu { 
+    display: flex;
+    flex-direction: row;
+
+}
+.mainMenu_item{
+    list-style-type: none;
+    justify-content: space-around;
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.mainMenu_item a {
+    color: white;
+    text-decoration: none;
+}
+/* --- Btn --- */
+.cta {
+    background-color:var(--main-green-color);
+    padding: 12px 16px;
+    border-radius: 50px;
+    color: var(--white-base);
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    border: 2px solid transparent;
+    font-weight: semibold;
+    
+    transition: background-color ease .3s;
+}
+.cta:hover{
+    background-color: var(--main-blue-color);
+}
+.ctaOutline {
+    background-color: transparent;
+    border: var(--white-base) 2px solid;
+    color: var(--white-base);
+}
+.ctaOutline:hover{
+    background-color: #8080803a;
+}
+.ctaGroup { 
+    display: flex;
+    gap: .5rem;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-items: legacy;
+    justify-content: center;
+}
+/* --- Hero --- */
+
+.heroCard {
+    background: linear-gradient(179deg, #151314 47.73%, #0A0A0B 66.18%, rgba(228, 226, 223, 0.00) 95.62%);
+    border-radius: 64px;
+    color: var(--white-base);    
+    display: block;
+    padding-top: var(--navbar-height);
+    text-align: center;
+}
+.heroCard-title{
+    margin: 1rem auto;    
+    max-width: 759px;
+}
+.hero_h1{
+    color: var(--Neutrals-Neutrals100, #E3E3E3);
+    text-align: center;
+    /* RGP - tandem/Desktop/Headings/Display 2 */
+    font-family: var(--font-family-title, "BR Hendrix");
+    font-size: var(--font-size-xxl);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;  
+}
+.hero_h3 {
+    color: var(--neutrals100);
+    text-align: center;    
+    font-family: var(--font-family-title);
+    font-size: var(--font-size-md);
+    font-style: normal;
+    font-weight: var(--font-weight-bold);
+    line-height: 120%;
+    margin: 2rem auto;
+}
+/* --- Toast ---*/
+.hero-Toast-container{
+    align-items: center;
+    background: url(../assets/images/Carousel-bg.png) bottom center;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+    margin: 0 auto;
+    min-height: 350px;
+    padding: 2rem;
+    position: relative;
+    text-align: center;
+}
+.hero-toastItem {
+    background-color: var(--white-base);
+    border: 1px solid var(--neutrals100);
+    border-radius: 5px;
+    color: var(--black-base);
+    display: inline-block;    
+    max-width: 570px;
+    padding: var(--spacing-base);
+    position: relative;
+}
+.hero-toastItem .close{
+    position: absolute;
+    right: .5rem;
+    top: .5rem;
+    background: none;
+    border: none;
+    font-family: var(--font-family-body);
+    display: block;
+    cursor: pointer;
+}
+.hero-toastItem-content{
+    display: flex;
+    gap: var(--spacing-base);
+    flex-direction: row;
+    align-items: center;
+    text-align: start;
+}
+
+/* --- Subhero --- */
+
+.heading {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-base);
+    padding: var(--spacing-xxl);
+    justify-content: space-between;
+}
+.heading h3{
+color: var(--black-base);
+font-family: var(--font-family-title, "BR Hendrix");
+font-size: var(--font-size-lg);
+font-style: normal;
+font-weight: var(--font-weight-bold);
+line-height: 120%; 
+}
+
+.heading p{
+    color: var(--black-base, #302030);
+    font-family: var(--font-family-title);
+    font-size: var(--spacing-xl);
+    font-style: normal;
+    font-weight: var(--font-weight-regular);
+    line-height: 120%; /* 33.6px */
+    margin: inherit;
+}
+footer {
+    background-color: #342f2b;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}

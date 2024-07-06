@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'BR Hendrix';
+    src: url('/assets/fonts/BRHendrix-Regular-BF6556d1b5096f9.otf') format('otf'), 
+    url('/assets/fonts/BRHendrix-Medium-BF6556d1b4e12b2.otf') format('otf'), url('/assets/fonts/BRHendrix-Bold-BF6556d1b5459d3.otf') format('otf');
+    font-weight: normal; 
+    font-style: normal;
+}
