@@ -28,7 +28,7 @@ canvas {
     height: auto;
 }
 
-h1, h2, h3 {
+h1, h2, h3 , h4 {
     margin: 0;
 }
 
@@ -64,7 +64,6 @@ select {
 }
 
 body,
-html {
-    height: 100%;
+html { 
     scroll-behavior: smooth;
 }
