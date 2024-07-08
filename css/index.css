@@ -440,8 +440,7 @@ footer .col {
     display: flex;
     justify-content: space-between;
     max-width: 500px;
-    margin-top: 20px;
-    padding: 8px;
+    margin-top: 20px;    
     border: 1px solid var(--neutrals100);
     border-radius: 50px;
 }
@@ -548,6 +547,9 @@ footer .col {
     }
     .footer-menu h5{
         text-align: end;
+    }
+    .subscribe-form{
+        padding: 8px;
     }
     .table-ab thead h4 {
         font-size: var(--font-size-lg);
