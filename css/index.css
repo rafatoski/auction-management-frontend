@@ -477,8 +477,9 @@ footer .col {
 }
 
 .footer-menu {
-    text-align: right;
-    display: inline-block;
+    text-align: center;
+    display: block;
+    width: 100%;
     margin: 1rem auto;    
 }
 
@@ -532,6 +533,11 @@ footer .col {
         
     display: flex;
     flex-direction: column;
+    }
+    .footer-menu{
+        text-align: right;
+        width: fit-content;
+        display: inline-block;
     }
     .table-ab thead h4 {
         font-size: var(--font-size-lg);
