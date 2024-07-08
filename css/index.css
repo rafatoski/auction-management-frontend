@@ -282,8 +282,9 @@ main {
 }
 
 .table-ab td {
-    padding: var(--spacing-md) var(--spacing-md);
+    padding: var(--spacing-xs) var(--spacing-xs);
     text-align: start;
+    font-size: var(--font-size-xs);
     font-weight: var(--font-weight-bold);
 }
 
@@ -485,7 +486,7 @@ footer .col {
 
 .footer-menu h5 {
     color: var(--Neutrals-Neutrals900, #2B2829);
-    text-align: right;
+    text-align: center;
     font-size: var(--font-size-md);
     font-style: normal;
     font-weight: 700;
@@ -534,10 +535,16 @@ footer .col {
     display: flex;
     flex-direction: column;
     }
+    .table-ab td {
+        padding: var(--spacing-md) var(--spacing-md);       
+        font-size: var(--font-size-md;
+    }
     .footer-menu{
         text-align: right;
-        width: fit-content;
         display: inline-block;
+    }
+    .footer-menu h5{
+        text-align: end;
     }
     .table-ab thead h4 {
         font-size: var(--font-size-lg);
