@@ -610,6 +610,7 @@ footer .col {
     .footer__main .col.end {
         align-items: end;
         text-align: end;
+        display: flex;
     }
     .hero-Toast-container {        
         animation: showreel 30s linear infinite;
