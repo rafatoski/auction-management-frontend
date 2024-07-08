@@ -528,10 +528,15 @@ footer .col {
     .heading p {
         font-size: var(--font-size-sm);
     }
-    .mainMenu {
-        
+    .mainMenu{        
     display: flex;
     flex-direction: column;
+    }
+    .mainMenu_btn{
+        display: inline-block;
+    }
+    .rwd-menu{
+        display: none;
     }
     .table-ab td {
         padding: var(--spacing-md) var(--spacing-md);       
@@ -549,7 +554,12 @@ footer .col {
     }
 }
 
-/* Desktop styles */
+/* 
+### 
+   Desktop styles
+### 
+*/
+
 @media (min-width: 1024px) {
     body {
         margin: .6rem;
