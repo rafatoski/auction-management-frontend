@@ -269,15 +269,14 @@ main {
 }
 
 .table-ab {
-    margin: 0 auto;
-    min-width: 500px;
-    width: 100%;
+    margin: 0 auto; 
+    width: 99%;
     border-collapse: collapse;
     border-radius: 25px;
 }
 
 .table-ab thead h4 {
-    font-size: var(--font-size-lg);
+    font-size: var(--font-size-md);
     word-wrap: break-word;
     margin: 0;
 }
@@ -393,9 +392,13 @@ main {
 footer {
     padding: 1rem;
 }
-
+footer .col {
+    width: 100%;
+    display: block;
+}
 .footer__main {
     display: flex;
+    flex-direction: column;
     padding: 0px var(--spacing-xl, 32px);
     justify-content: space-between;
     align-items: start;
@@ -438,7 +441,7 @@ footer {
     display: flex;
     justify-content: space-between;
     max-width: 500px;
-    margin: 20px auto;
+    margin-top: 20px;
     padding: 8px;
     border: 1px solid var(--neutrals100);
     border-radius: 50px;
@@ -482,9 +485,6 @@ footer {
 .footer-menu h5 {
     color: var(--Neutrals-Neutrals900, #2B2829);
     text-align: right;
-
-    /* RGP - tandem/Desktop/Body/Content Bold */
-    font-family: "BR Hendrix";
     font-size: var(--font-size-md);
     font-style: normal;
     font-weight: 700;
@@ -494,6 +494,7 @@ footer {
 
 .footer-menu ul {
     list-style: none;
+    padding: 0;
 }
 
 .footer-menu li {
@@ -532,6 +533,9 @@ footer {
     display: flex;
     flex-direction: column;
     }
+    .table-ab thead h4 {
+        font-size: var(--font-size-lg);
+    }
 }
 
 /* Desktop styles */
@@ -566,11 +570,20 @@ footer {
 
     .footer-menu {
         margin-left: 3rem;
+        margin-top: 0;
+    }
+    .footer__main{
+        flex-direction: row;
     }
 
     .footer__main .col {
         width: initial;
         display: inline-block;
+        width: 50%;
+    }
+    .footer__main .col.end {
+        align-items: end;
+        text-align: end;
     }
     .hero-Toast-container {        
         animation: showreel 30s linear infinite;
